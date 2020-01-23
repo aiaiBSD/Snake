@@ -201,7 +201,7 @@ def main():
                 if mainBoard[appleX][appleY] != "F" and mainBoard[appleX][appleY] != "S":
                     go = False
             mainBoard[appleX][appleY] = "A"
-            speed -= 4
+            speed /= 1.05
 
         if grow:
             posX = snakeX[snakeX.__len__() - 1]
